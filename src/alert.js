@@ -1,3 +1,4 @@
 function alerta() {
     alert("Esta página no está implementada");
 }
+console.log("hola");
