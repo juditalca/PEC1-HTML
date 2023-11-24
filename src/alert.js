@@ -1,3 +1,3 @@
 function alerta() {
-    window.alert("Esta página no está implementada");
+    alert("Esta página no está implementada");
 }
