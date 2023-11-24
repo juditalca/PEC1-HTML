@@ -1,0 +1,250 @@
+$font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$color-principal: beige;
+$color-secundario: rgb(148, 87, 87);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: $font;  
+    background-color: $color-principal;
+}
+  
+.main-header{
+    background: $color-secundario;
+    width: 100%;
+    height:80px;
+    color: $color-principal;
+}
+  
+.navigation {
+    ul {
+        display: flex;
+        padding: 5;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height:1.4;
+        padding-left: 20;
+    }
+  
+    li{
+        list-style:none;
+        width: 15%;
+        padding-left: 80;
+    }
+
+    a{
+        color:$color-principal;
+        display: block;
+        transition:.4s ease;
+        line-height:4;
+        text-decoration:none;
+    }
+    a:hover{
+        transform:translateX(10%);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-header{
+        background: $color-secundario;
+        width: 100%;
+        height:100px;
+        color: $color-principal;
+    }
+    .navigation {
+        margin-left: 10;
+        ul {
+            display:grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+    
+        h1 {
+            font-size: 30;
+            grid-column: 1/5;
+            grid-row: 1/1;
+            padding: 0;
+        }
+      
+        li{
+            list-style:none;
+            padding: 0;
+        }
+        .li1{
+            grid-column: 1/1;
+            grid-row: 2/2;
+        }
+        .li2{
+            grid-column: 2/3;
+            grid-row: 2/2;
+            margin-left: 30;
+        }
+        .li3{
+            grid-column: 4/4;
+            grid-row: 2/2;
+        }
+        .li4{
+            grid-column: 6/6;
+            grid-row: 2/2;
+        }
+    
+        a{
+            color:$color-principal;
+            display: block;
+            transition:.4s ease;
+            text-decoration:none;
+        }
+        a:hover{
+            transform:translateX(10%);
+        }
+    }
+    .categs{
+        font-size: 15;
+    }
+    .ejemUbis{
+        margin-right: 30;
+    }
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img{
+    width: 100%;
+}
+
+.img1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    animation: fadeInRightBig;
+    animation-duration: 1s;
+}
+
+.img2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+
+.img3 {
+    grid-column: 3/3;
+    grid-row: 1;
+    animation: fadeInRightBig;
+    animation-duration: 3s;
+}
+
+.img4 {
+    grid-column: 2/3;
+    grid-row: 2;
+    animation: backInUp;
+    animation-duration: 4.5s;
+}
+
+.enlaces{
+    padding: 30;
+    margin-left: 40;
+    margin-right: 30;
+}
+
+.presentacion{
+    margin-left: 30;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20;
+}
+
+.imgpres1{
+    grid-column:4/5;
+    grid-row: 1/6;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.p1{
+    grid-column: 1/4;
+    grid-row: 1/1;
+    margin-top: 30;
+    margin-right: 30;
+}
+
+.titulo1{
+    grid-column: 1/4;
+    grid-row: 2/2;
+    margin-top: 30;
+    margin-right: 30;
+}
+
+.titulo2{
+    grid-column: 1/4;
+    grid-row: 3/3;
+    margin-top: 30;
+    margin-right: 30;
+}
+
+.titulo3{
+    grid-column: 1/4;
+    grid-row: 4/4;
+    margin-top: 30;
+    margin-right: 30;
+}
+
+h3{
+    margin-bottom: 10;
+}
+
+.personajes{
+    margin-top: 10;
+    margin-left: 20;
+}
+
+h2{
+    padding: 30;
+}
+
+.p2{
+    margin-left: 40;
+    margin-right: 30;
+}
+
+.categoria{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    padding: 30;
+    figure{
+        grid-column: 12/20;
+        grid-row: 1/1;
+        animation: fadeIn;
+        animation-duration: 2s;
+    }
+    ul{
+        grid-column: 1/10;
+        grid-row: 1/1;
+        
+        margin-left: 30;
+        list-style: disc;
+        li{ margin: 20; }
+        a{
+        color: $color-secundario;
+        text-decoration:none;
+        }
+    }
+}
+
+.ubicaciones{
+    img{width: 60%;}
+    p{padding: 40;}
+    ul{margin-left: 70;}
+}
+
+.p3{
+    margin-left: 30;
+    margin-right: 30;
+}
